@@ -1,36 +1,52 @@
-#HeaderCarousel, #HeaderCarousel img{
-    height: 50vh !important;
-    min-height: 300px !important;
+#HeaderCarousel,
+#HeaderCarousel img {
+  height: 50vh !important;
+  min-height: 300px !important;
+}
+
+#HeaderCarousel img {
+  object-fit: cover;
+}
+
+#HeaderCarousel h5,
+#HeaderCarousel p {
+  text-shadow: 0rem 0rem 1rem black !important;
+  color: white;
 }
 
 
-#HeaderCarousel img{
-    object-fit: cover;
+form[role="search"] {
+  position: relative;
 }
 
-#HeaderCarousel h5, #HeaderCarousel p{
-    text-shadow: 0rem 0rem 1rem black !important;
-    color: white;
+#navSearch-results {
+  width: 100%;
+  right: 28%;
+  position: absolute;
+  background: white;
+  height: auto;
+  border-radius: 5px;
+  top: 40px;
+  z-index: 3;
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
-#HeaderCarousel{
-    margin-top: 12px;
-    margin-bottom: 20px;
+#navSearch-results a:hover {
+  opacity: 0.9;
 }
 
-form[role="search"]{
-    position: relative;
+.card:target {
+  animation-name: glowNow;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
 
-#navSearch-results{
-    width: 100%;
-    right: 28%;
-    position: absolute;
-    background: white;
-    height: auto;
-    border-radius:5px;
-    bottom: -30px;
-    z-index: 3;
-    max-height: 100px;
-    overflow-y: scroll;
+@keyframes glowNow {
+  from {
+    box-shadow: 0 0 1rem red;
+  }
+  to {
+    box-shadow: none;
+  }
 }
