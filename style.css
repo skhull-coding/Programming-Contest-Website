@@ -20,8 +20,8 @@ form[role="search"] {
 }
 
 #navSearch-results {
-  width: 100%;
-  right: 28%;
+  width: 130%;
+  right: 4%;
   position: absolute;
   background: white;
   height: auto;
