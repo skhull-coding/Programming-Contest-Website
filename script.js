@@ -16,7 +16,7 @@ contests
       cct.innerHTML += `<div class="card" id="${contest_going.name.replaceAll(
         " ",
         "-"
-      )}" style="width: 22rem;">
+      )}" style="width: 23rem;">
             <img src="./card-img.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${contest_going.name}</h5>

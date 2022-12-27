@@ -49,3 +49,9 @@ form[role="search"] {
     box-shadow: none;
   }
 }
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
